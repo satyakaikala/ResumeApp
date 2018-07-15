@@ -1,1 +1,1 @@
-include ':resume', ':app', ':base', ':instantapp'
+include ':resumefeature', ':app', ':base', ':instantapp', ':githubfeature', ':linkedinfeature'
