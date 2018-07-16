@@ -6,8 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.prassatyan.resumefeature.R;
-
 import androidx.fragment.app.Fragment;
 
 
