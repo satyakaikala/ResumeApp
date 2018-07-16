@@ -20,6 +20,8 @@ android {
 }
 
 dependencies {
+    implementation project(':githubfeature')
+    implementation project(':linkedinfeature')
     implementation project(':resumefeature')
     implementation project(':base')
 }

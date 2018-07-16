@@ -18,8 +18,9 @@ android {
 }
 
 dependencies {
-    api "com.android.support:appcompat-v7:${rootProject.ext.androidSupportVersion}"
-    api "com.android.support.constraint:constraint-layout:${rootProject.ext.constraintLayoutVersion}"
+    api "androidx.appcompat:appcompat:${rootProject.ext.androidXAppcompatVersion}"
+    api "androidx.constraintlayout:constraintlayout:${rootProject.ext.constraintLayoutVersion}"
+    api "com.google.android.material:material:${rootProject.ext.material2Version}"
     application project(':app')
     feature project(':resumefeature')
     feature project(":githubfeature")
