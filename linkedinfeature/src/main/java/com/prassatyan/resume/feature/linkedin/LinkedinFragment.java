@@ -1,4 +1,4 @@
-package com.praszapps.linkedinfeature;
+package com.prassatyan.resume.feature.linkedin;
 
 
 import android.os.Bundle;
@@ -24,7 +24,7 @@ public class LinkedinFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_linkedin, container, false);
+        return inflater.inflate(com.prassatyan.linkedin.R.layout.fragment_linkedin, container, false);
     }
 
 }

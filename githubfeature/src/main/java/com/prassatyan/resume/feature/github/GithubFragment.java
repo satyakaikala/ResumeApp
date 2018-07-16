@@ -1,4 +1,4 @@
-package com.praszapps.githubfeature;
+package com.prassatyan.resume.feature.github;
 
 
 import android.os.Bundle;
@@ -6,7 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.prassatyan.resumeapp.MainActivity;
+import com.prassatyan.githubfeature.R;
+import com.praszapps.githubfeature.R;
 
 import androidx.fragment.app.Fragment;
 
