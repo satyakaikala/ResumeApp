@@ -1,4 +1,4 @@
-package com.praszapps.linkedinfeature;
+package com.prassatyan.resume.feature.linkedin;
 
 
 import android.os.Bundle;
