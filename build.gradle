@@ -41,7 +41,7 @@ ext {
     compileSdkVersion = 28
     buildToolsVersion = '27.0.3'
     material2Version = "1.0.0-beta01"
-    androidXAppcompatVersion = "1.0.0-alpha3"
+    androidXAppcompatVersion = "1.0.0-beta01"
 
     jUnitVersion = "4.12"
     constraintLayoutVersion = "1.1.2"
@@ -53,6 +53,9 @@ ext {
     daggerVersion = "2.16"
     testRunnerVersion = "1.0.2"
     espressoCoreVersion = "3.0.2"
+    rxandroid = "2.0.1"
+    rxjava = "2.0.8"
+    retrofit = "2.1.0"
 
     enableProguard = false
 }
