@@ -37,7 +37,7 @@ dependencies {
     api "androidx.cardview:cardview:${rootProject.ext.androidXAppcompatVersion}"
     api "androidx.annotation:annotation:${rootProject.ext.androidXAppcompatVersion}"
 
-    annotationProcessor("android.arch.lifecycle:compiler:1.0.0-alpha1")
+    annotationProcessor "android.arch.lifecycle:compiler:${rootProject.ext.lifecycleVersion}"
 
     /* Square */
     api("com.squareup.picasso:picasso:2.5.2",
@@ -55,4 +55,18 @@ dependencies {
     /* Retrofit 2*/
     api("com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofit}",
             "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit}")
+
+    // Dagger2
+    api "com.google.dagger:dagger:${rootProject.ext.dagger2Version}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${rootProject.ext.dagger2Version}"
+
+    // Google Auto value
+    annotationProcessor "com.google.auto.value:auto-value:${rootProject.ext.autovalueVersion}"
+    api "com.google.auto.value:auto-value-annotations:${rootProject.ext.autovalueVersion}"
+    // Google Auto value extension to support Parcelable
+    annotationProcessor "com.ryanharter.auto.value:auto-value-parcel:${rootProject.ext.autovalueParcelVersion}"
+    // Google Auto value extension to support gson parsing
+    annotationProcessor 'com.ryanharter.auto.value:auto-value-gson:0.8.0'
+    api 'com.ryanharter.auto.value:auto-value-gson-annotations:0.8.0'
+
 }
