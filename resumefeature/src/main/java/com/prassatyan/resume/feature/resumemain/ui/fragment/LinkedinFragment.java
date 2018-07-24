@@ -10,7 +10,6 @@ import com.prassatyan.resume.feature.resumemain.R;
 
 import androidx.fragment.app.Fragment;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
