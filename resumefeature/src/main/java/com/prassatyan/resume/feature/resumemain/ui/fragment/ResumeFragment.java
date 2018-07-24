@@ -1,4 +1,4 @@
-package com.prassatyan.resume.feature.resumemain;
+package com.prassatyan.resume.feature.resumemain.ui.fragment;
 
 
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import com.prassatyan.resume.feature.resumemain.R;
 
 import androidx.fragment.app.Fragment;
 
@@ -23,8 +25,6 @@ public class ResumeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        Toast.makeText(getContext(), "Clicked on resume", Toast.LENGTH_SHORT).show();
         return inflater.inflate(R.layout.fragment_resume, container, false);
     }
 

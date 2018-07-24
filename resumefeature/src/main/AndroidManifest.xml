@@ -3,7 +3,7 @@
     package="com.prassatyan.resume.feature.resumemain">
 
     <application>
-        <activity android:name="com.prassatyan.resume.feature.resumemain.MainActivity">
+        <activity android:name="com.prassatyan.resume.feature.resumemain.ui.activity.MainActivity">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
