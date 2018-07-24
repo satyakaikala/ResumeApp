@@ -14,14 +14,14 @@ import com.google.gson.annotations.SerializedName;
  * @author Satya
  */
 @AutoValue
-public abstract class Repos implements Parcelable {
+public abstract class Repo implements Parcelable {
 
-    public static Repos create(long repoId, String repoName, String repoFullName, String repoUrl, String repoDescription, boolean isForked, String repoCreatedAt, String repoUpdatedAt) {
-        return new AutoValue_Repos(repoId, repoName, repoFullName, repoUrl, repoDescription, isForked, repoCreatedAt, repoUpdatedAt);
+    public static Repo create(long repoId, String repoName, String repoFullName, String repoUrl, String repoDescription, boolean isForked, String repoCreatedAt, String repoUpdatedAt) {
+        return new AutoValue_Repo(repoId, repoName, repoFullName, repoUrl, repoDescription, isForked, repoCreatedAt, repoUpdatedAt);
     }
 
-    public static TypeAdapter<Repos> typeAdapter(Gson gson) {
-        return new AutoValue_Repos.GsonTypeAdapter(gson);
+    public static TypeAdapter<Repo> typeAdapter(Gson gson) {
+        return new AutoValue_Repo.GsonTypeAdapter(gson);
     }
 
     @SerializedName("id")

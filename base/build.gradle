@@ -31,7 +31,6 @@ dependencies {
     application project(':app')
 
     api "androidx.appcompat:appcompat:${rootProject.ext.androidXAppcompatVersion}"
-    api "androidx.constraintlayout:constraintlayout:${rootProject.ext.constraintLayoutVersion}"
     api "com.google.android.material:material:${rootProject.ext.androidXAppcompatVersion}"
     api "androidx.recyclerview:recyclerview:${rootProject.ext.androidXAppcompatVersion}"
     api "androidx.cardview:cardview:${rootProject.ext.androidXAppcompatVersion}"
