@@ -53,7 +53,8 @@ dependencies {
 
     /* Retrofit 2*/
     api("com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofit}",
-            "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit}")
+            "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit}",
+            "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.loggingInterceptor}")
 
     // Dagger2
     api "com.google.dagger:dagger:${rootProject.ext.dagger2Version}"

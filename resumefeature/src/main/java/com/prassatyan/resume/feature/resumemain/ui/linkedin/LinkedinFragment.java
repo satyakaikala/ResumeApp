@@ -1,4 +1,4 @@
-package com.prassatyan.resume.feature.resumemain.ui.fragment;
+package com.prassatyan.resume.feature.resumemain.ui.linkedin;
 
 
 import android.os.Bundle;

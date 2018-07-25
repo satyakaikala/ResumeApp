@@ -2,7 +2,7 @@ package com.prassatyan.resume.feature.resumemain.di;
 
 import com.prassatyan.resume.di.OwnerModule;
 import com.prassatyan.resume.di.RepoModule;
-import com.prassatyan.resume.feature.resumemain.ui.fragment.GithubFragment;
+import com.prassatyan.resume.feature.resumemain.ui.github.fragment.GithubFragment;
 
 import dagger.Component;
 

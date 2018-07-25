@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="titleText">18sp</dimen>
+    <dimen name="textBody">14sp</dimen>
+    <dimen name="textLink">14sp</dimen>
+    <dimen name="card_radius">5dp</dimen>
+    <dimen name="dimen5dp">5dp</dimen>
+    <dimen name="dimen3dp">5dp</dimen>
+    <dimen name="dimen8dp">5dp</dimen>
+</resources>
