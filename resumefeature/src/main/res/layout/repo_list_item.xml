@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen5dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoName"
+            style="@style/TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:fontFamily="monospace"
+            tools:text="Repo Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/repoDesc"
+            style="@style/TextBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repoName"
+            app:fontFamily="monospace"
+            tools:text="Repo Desc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/more"
+            style="@style/TextLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/repoDesc"
+            android:gravity="end"
+            app:fontFamily="monospace"
+            tools:text="More" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

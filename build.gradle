@@ -56,6 +56,7 @@ ext {
     rxandroid = "2.0.1"
     rxjava = "2.0.8"
     retrofit = "2.1.0"
+    loggingInterceptor = "3.8.0"
     autovalueVersion="1.6.2"
     autovalueParcelVersion="0.2.6"
     enableProguard = false
