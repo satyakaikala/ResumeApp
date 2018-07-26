@@ -6,3 +6,5 @@ rules:
       required_status_checks:
         contexts:
         - 'ci/circleci: build'
+      required_pull_request_reviews:
+        required_approving_review_count: 2
