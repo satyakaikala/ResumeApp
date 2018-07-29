@@ -6,7 +6,7 @@ public interface MVPContract {
         void initView();
     }
 
-    interface IBaseActivityPresenter<V extends IBaseView> {
+    interface IBasePresenter<V extends IBaseView> {
         void onCreate(V view);
 
         void onStart();
