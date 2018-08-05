@@ -8,10 +8,7 @@ import android.view.ViewGroup;
 
 import com.prassatyan.resume.feature.resumemain.R;
 import com.prassatyan.resume.feature.resumemain.ui.github.viewmodel.GitHubViewModel;
-import com.prassatyan.resume.feature.resumemain.ui.resume.ResumeFragment;
 import com.prassatyan.resume.ui.ResumeBaseFragment;
-
-import androidx.fragment.app.Fragment;
 
 
 /**

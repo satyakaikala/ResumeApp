@@ -1,6 +1,5 @@
 package com.prassatyan.resume.network.github;
 
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -26,7 +25,6 @@ public class NetworkClient {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(GIT_HUB_BASE_URL)
-                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client.build())
                     .build();

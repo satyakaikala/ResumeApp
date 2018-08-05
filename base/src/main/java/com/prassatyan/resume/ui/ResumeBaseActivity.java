@@ -1,10 +1,8 @@
 package com.prassatyan.resume.ui;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import com.prassatyan.resume.data.local.DataStorage;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * This is the Base Activity. All base activities will extend this.

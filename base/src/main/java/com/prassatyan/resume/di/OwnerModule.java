@@ -1,6 +1,5 @@
 package com.prassatyan.resume.di;
 
-
 import com.prassatyan.resume.data.model.github.Owner;
 
 import javax.inject.Singleton;
