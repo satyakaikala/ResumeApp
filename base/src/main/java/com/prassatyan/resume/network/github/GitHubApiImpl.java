@@ -19,8 +19,8 @@ public class GitHubApiImpl implements GitHubApi {
      * @return
      */
     @Override
-    public Call<List<Repo>> listRepos(String user) {
-        return NetworkClient.getClient().create(GitHubApi.class).listRepos(user);
+    public Call<List<Repo>> reposList(String user) {
+        return NetworkClient.getClient().create(GitHubApi.class).reposList(user);
     }
 
     /**
