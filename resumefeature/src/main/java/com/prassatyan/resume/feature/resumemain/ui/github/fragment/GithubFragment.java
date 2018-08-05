@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.prassatyan.resume.feature.resumemain.R;
+import com.prassatyan.resume.feature.resumemain.ui.github.viewmodel.GitHubViewModel;
+import com.prassatyan.resume.feature.resumemain.ui.resume.ResumeFragment;
+import com.prassatyan.resume.ui.ResumeBaseFragment;
 
 import androidx.fragment.app.Fragment;
 
@@ -14,12 +17,20 @@ import androidx.fragment.app.Fragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class GithubFragment extends Fragment {
+public class GithubFragment extends ResumeBaseFragment {
+
+    private static final String TAG = GithubFragment.class.getSimpleName();
+
+    private GitHubViewModel gitHubViewModel;
 
     public GithubFragment() {
         // Required empty public constructor
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -6,16 +6,19 @@
     <style name="TitleText" parent="Defaults">
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textSize">@dimen/titleText</item>
+        <item name="android:padding">@dimen/dimen5dp</item>
     </style>
 
     <style name="TextBody" parent="Defaults">
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textSize">@dimen/textBody</item>
+        <item name="android:padding">@dimen/dimen3dp</item>
     </style>
 
     <style name="TextLink" parent="Defaults">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">@dimen/textLink</item>
+        <item name="android:padding">@dimen/dimen3dp</item>
     </style>
 
 </resources>

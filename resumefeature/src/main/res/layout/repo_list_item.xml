@@ -2,6 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.MaterialComponents.CardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/card_margin"
@@ -18,6 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
             app:fontFamily="monospace"
             tools:text="Repo Name" />
 
@@ -27,6 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/repoName"
+            android:ellipsize="marquee"
+            android:singleLine="true"
             app:fontFamily="monospace"
             tools:text="Repo Desc" />
 
@@ -35,12 +40,11 @@
             style="@style/TextLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_below="@id/repoDesc"
             android:gravity="end"
             app:fontFamily="monospace"
-            tools:text="More" />
+            tools:text="more..." />
     </RelativeLayout>
 
 </com.google.android.material.card.MaterialCardView>

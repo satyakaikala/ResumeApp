@@ -5,7 +5,7 @@ import com.prassatyan.resume.data.model.github.Repo;
 
 import java.util.List;
 
-import io.reactivex.Single;
+import retrofit2.Call;
 
 /**
  * Github service class
@@ -19,8 +19,8 @@ public class GitHubApiImpl implements GitHubApi {
      * @return
      */
     @Override
-    public Single<List<Repo>> listRepos(String user) {
-        return NetworkClient.getClient().create(GitHubApi.class).listRepos(user);
+    public Call<List<Repo>> reposList(String user) {
+        return NetworkClient.getClient().create(GitHubApi.class).reposList(user);
     }
 
     /**
@@ -30,7 +30,7 @@ public class GitHubApiImpl implements GitHubApi {
      * @return
      */
     @Override
-    public Single<Owner> getUser(String userName) {
+    public Call<Owner> getUser(String userName) {
         return NetworkClient.getClient().create(GitHubApi.class).getUser(userName);
     }
 }

@@ -35,7 +35,7 @@ dependencies {
     api "androidx.recyclerview:recyclerview:${rootProject.ext.androidXAppcompatVersion}"
     api "androidx.cardview:cardview:${rootProject.ext.androidXAppcompatVersion}"
     api "androidx.annotation:annotation:${rootProject.ext.androidXAppcompatVersion}"
-
+    api "android.arch.lifecycle:extensions:${rootProject.ext.lifecycleVersion}"
     annotationProcessor "android.arch.lifecycle:compiler:${rootProject.ext.lifecycleVersion}"
 
     /* Square */
