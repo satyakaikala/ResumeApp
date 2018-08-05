@@ -1,14 +1,14 @@
 package com.prassatyan.resume.feature.resumemain.ui.activity;
 
 import android.os.Bundle;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.prassatyan.resume.feature.resumemain.R;
 import com.prassatyan.resume.feature.resumemain.ui.github.fragment.GithubFragment;
 import com.prassatyan.resume.feature.resumemain.ui.linkedin.LinkedinFragment;
 import com.prassatyan.resume.feature.resumemain.ui.resume.ResumeFragment;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

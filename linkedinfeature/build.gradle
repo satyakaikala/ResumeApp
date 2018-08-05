@@ -3,7 +3,6 @@ apply plugin: 'com.android.feature'
 android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -32,7 +31,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api project(':base')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation "junit:junit:${rootProject.ext.jUnitVersion}"
+    androidTestImplementation "com.android.support.test:runner:${rootProject.ext.testRunnerVersion}"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:${rootProject.ext.espressoCoreVersion}"
 }

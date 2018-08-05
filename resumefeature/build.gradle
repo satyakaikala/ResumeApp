@@ -2,7 +2,6 @@ apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -28,8 +27,8 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':base')
-    implementation "androidx.constraintlayout:constraintlayout:${rootProject.ext.constraintLayoutVersion}"
     testImplementation "junit:junit:${rootProject.ext.jUnitVersion}"
     androidTestImplementation "com.android.support.test:runner:${rootProject.ext.testRunnerVersion}"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:${rootProject.ext.espressoCoreVersion}"
+
 }
