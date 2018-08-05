@@ -16,6 +16,10 @@ public class DataStorage {
 
     private static SharedPreferences sharedPreferences;
 
+    public DataStorage(SharedPreferences preferences) {
+        sharedPreferences = preferences;
+    }
+
     public static void initialize(Context context) {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
     }
