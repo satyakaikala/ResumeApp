@@ -46,21 +46,23 @@ dependencies {
     feature project(":linkedinfeature")
     application project(':app')
 
-    api "com.android.support:design:${rootProject.ext.androidSupportVersion}"
-    api "com.android.support:recyclerview-v7:${rootProject.ext.androidSupportVersion}"
-    api "com.android.support:cardview-v7:${rootProject.ext.androidSupportVersion}"
-    api "com.android.support:support-annotations:${rootProject.ext.androidSupportVersion}"
-    api "android.arch.lifecycle:extensions:${rootProject.ext.lifecycleVersion}"
+    api("com.android.support:design:${rootProject.ext.androidSupportVersion}",
+            "com.android.support:recyclerview-v7:${rootProject.ext.androidSupportVersion}",
+            "com.android.support:cardview-v7:${rootProject.ext.androidSupportVersion}",
+            "com.android.support:support-annotations:${rootProject.ext.androidSupportVersion}",
+            "android.arch.lifecycle:extensions:${rootProject.ext.lifecycleVersion}")
+
     annotationProcessor "android.arch.lifecycle:compiler:${rootProject.ext.lifecycleVersion}"
 
-    api "com.google.code.gson:gson:${rootProject.ext.gsonVersion}"
+    /* Moshi */
+    api "com.squareup.moshi:moshi:${rootProject.ext.moshiVersion}"
 
     /* Picasso */
     api("com.squareup.picasso:picasso:${rootProject.ext.picassoVersion}",
             "com.jakewharton.picasso:picasso2-okhttp3-downloader:${rootProject.ext.picassoOkhttpVersion}")
 
     /* Retrofit 2*/
-    api("com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofitVersion}",
+    api("com.squareup.retrofit2:converter-moshi:${rootProject.ext.moshiConverterVersion}",
             "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofitVersion}",
             "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.loggingInterceptor}")
 
@@ -69,11 +71,10 @@ dependencies {
     annotationProcessor "com.google.dagger:dagger-compiler:${rootProject.ext.dagger2Version}"
 
     // Google Auto value
-    annotationProcessor "com.google.auto.value:auto-value:${rootProject.ext.autovalueVersion}"
     api "com.google.auto.value:auto-value-annotations:${rootProject.ext.autovalueVersion}"
-    // Google Auto value extension to support Parcelable
-    annotationProcessor "com.ryanharter.auto.value:auto-value-parcel:${rootProject.ext.autovalueParcelVersion}"
+
     // Google Auto value extension to support gson parsing
-    annotationProcessor "com.ryanharter.auto.value:auto-value-gson:${rootProject.ext.autoValueGsonVersion}"
-    api "com.ryanharter.auto.value:auto-value-gson-annotations:${rootProject.ext.autoValueGsonVersion}"
+    annotationProcessor("com.ryanharter.auto.value:auto-value-moshi:${rootProject.ext.autoValueMoshiVersion}",
+            "com.ryanharter.auto.value:auto-value-parcel:${rootProject.ext.autovalueParcelVersion}",
+    )
 }
