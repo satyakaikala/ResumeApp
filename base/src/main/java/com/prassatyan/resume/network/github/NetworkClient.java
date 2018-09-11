@@ -4,7 +4,7 @@ package com.prassatyan.resume.network.github;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.moshi.MoshiConverterFactory;
 
 import static com.prassatyan.resume.util.Constants.GIT_HUB_BASE_URL;
 
@@ -25,7 +25,7 @@ public class NetworkClient {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(GIT_HUB_BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
+                    .addConverterFactory(MoshiConverterFactory.create())
                     .client(client.build())
                     .build();
         }

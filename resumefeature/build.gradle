@@ -18,6 +18,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
+    flavorDimensions "person"
+
+    productFlavors {
+
+        satya {
+            dimension "person"
+        }
+
+        prasan {
+            dimension "person"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
