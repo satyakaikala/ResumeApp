@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/PraSatyan/ResumeApp/tree/develop.svg?style=svg)](https://circleci.com/gh/PraSatyan/ResumeApp/tree/develop)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPraSatyan%2FResumeApp.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPraSatyan%2FResumeApp?ref=badge_shield)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/PraSatyan/ResumeApp/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
@@ -37,3 +38,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPraSatyan%2FResumeApp.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPraSatyan%2FResumeApp?ref=badge_large)
