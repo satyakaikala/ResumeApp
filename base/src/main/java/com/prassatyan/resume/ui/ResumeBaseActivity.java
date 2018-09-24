@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
  *
  * @author Satya
  */
-public class ResumeBaseActivity extends AppCompatActivity {
+public abstract class ResumeBaseActivity extends AppCompatActivity {
 
     private static final String TAG = ResumeBaseActivity.class.getSimpleName();
 
