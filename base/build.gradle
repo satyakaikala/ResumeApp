@@ -48,6 +48,7 @@ dependencies {
     feature project(":githubfeature")
     feature project(":linkedinfeature")
     application project(':app')
+    api 'com.google.android.gms:play-services-oss-licenses:16.0.0'
 
     api("com.google.android.material:material:${rootProject.ext.androidSupportVersion}",
             "androidx.recyclerview:recyclerview:${rootProject.ext.androidSupportVersion}",
@@ -76,7 +77,7 @@ dependencies {
     // Google Auto value
     api "com.google.auto.value:auto-value-annotations:${rootProject.ext.autovalueVersion}"
 
-    // Google Auto value extension to support gson parsing
+    // Google Auto value extension to support moshi parsing
     annotationProcessor("com.ryanharter.auto.value:auto-value-moshi:${rootProject.ext.autoValueMoshiVersion}",
             "com.ryanharter.auto.value:auto-value-parcel:${rootProject.ext.autovalueParcelVersion}",
     )
