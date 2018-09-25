@@ -1,12 +1,13 @@
 package com.prassatyan.resume.feature.resumemain.ui.github.adapter;
 
-import android.support.v7.widget.AppCompatTextView;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.prassatyan.resume.feature.resumemain.R;
+
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 public class GithubRepoListAdapter extends RecyclerView.Adapter<GithubRepoListAdapter.GitHubViewHolder> {

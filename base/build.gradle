@@ -10,6 +10,9 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
     }
+
+
+
     buildTypes {
         release {
             minifyEnabled rootProject.ext.enableProguard
@@ -46,13 +49,13 @@ dependencies {
     feature project(":linkedinfeature")
     application project(':app')
 
-    api("com.android.support:design:${rootProject.ext.androidSupportVersion}",
-            "com.android.support:recyclerview-v7:${rootProject.ext.androidSupportVersion}",
-            "com.android.support:cardview-v7:${rootProject.ext.androidSupportVersion}",
-            "com.android.support:support-annotations:${rootProject.ext.androidSupportVersion}",
-            "android.arch.lifecycle:extensions:${rootProject.ext.lifecycleVersion}")
+    api("com.google.android.material:material:${rootProject.ext.androidSupportVersion}",
+            "androidx.recyclerview:recyclerview:${rootProject.ext.androidSupportVersion}",
+            "androidx.cardview:cardview:${rootProject.ext.androidSupportVersion}",
+            "androidx.annotation:annotation:${rootProject.ext.androidSupportVersion}",
+            "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.androidLifeCycleVersion}")
 
-    annotationProcessor "android.arch.lifecycle:compiler:${rootProject.ext.lifecycleVersion}"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:${rootProject.ext.androidLifeCycleVersion}"
 
     /* Moshi */
     api "com.squareup.moshi:moshi:${rootProject.ext.moshiVersion}"
