@@ -2,8 +2,6 @@ package com.prassatyan.resume.feature.resumemain.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -15,7 +13,7 @@ import com.prassatyan.resume.feature.resumemain.ui.linkedin.LinkedinFragment;
 import com.prassatyan.resume.feature.resumemain.ui.resume.ResumeFragment;
 import com.prassatyan.resume.ui.ResumeBaseActivity;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 public class MainActivity extends ResumeBaseActivity {

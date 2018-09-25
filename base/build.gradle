@@ -48,6 +48,7 @@ dependencies {
     feature project(":githubfeature")
     feature project(":linkedinfeature")
     application project(':app')
+    
     api 'com.google.android.gms:play-services-oss-licenses:16.0.0'
 
     api("com.google.android.material:material:${rootProject.ext.androidSupportVersion}",
